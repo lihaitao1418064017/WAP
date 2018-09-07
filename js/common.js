@@ -149,7 +149,7 @@ var Global = (function () {
     // 全局设置
     var settings = {
       // base_rap_url: 'http://rap.ctsp.kedacom.com/mockjs/13',
-      ajax_url: ''
+      ajax_url: 'http://localhost:8080'
     };
     /**
      * 自定义下拉

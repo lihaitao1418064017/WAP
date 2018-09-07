@@ -1,28 +1,27 @@
 /**
  * cd-user公用js
  */
-(function () {
 
+(function () {
     // 接口
     var ajaxRequest = Global.methods.ajaxRequest;
     var baseUrl = Global.constant.BASEURL;
     Global.service = {
+
+
         /**
-         * 获取项目列表
-         * @param data 参数
-         * @param successCallBack 成功回调
-         * @param failCallBack 失败回调
+         * 注册请求
+         * @param data
+         * @param successCallBack
+         * @param failCallBack
          */
-        getNetList: function (data, successCallBack, failCallBack) {
+        register: function (data, successCallBack, failCallBack) {
+            alert("sdd");
             ajaxRequest({
                 type: 'POST',
-                url: baseUrl + '/project/list',
+                url: 'http://localhost:8080/user/login',
                 data: data
             }, successCallBack, failCallBack);
         }
-
-
-
-
     };
 })();
